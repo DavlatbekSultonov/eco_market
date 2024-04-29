@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-default-permissions-and-roles
+      author: developercruela@gmail.com
+      changes:
+        - sqlFile:
+            path: create-default-role-and-permissions.sql
+            relativeToChangelogFile: true

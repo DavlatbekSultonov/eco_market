@@ -1,0 +1,28 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: webstore.perfume@gmail.com
+    password: lnlzzizbarytqfnz
+    properties:
+      mail.smtp.starttls.enable: true
+      mjaail.smtp.auth: true
+  datasource:
+    username: postgres
+    password: 123
+    url: jdbc:postgresql://localhost:5432/postgres
+  data:
+    redis:
+      url: jdbc:redis://localhost:6379/0
+      password: redis
+      username: default
+eco:
+  security:
+    token:
+      expiration: 86400
+      secret: frgnPw9V+/voFBmtD9H7vony3uOTfK1HT0+Zr2qz4F0aUmh5mIMuJ+CgZ1rn718L
+
+  otp:
+    retry-wait-time: 5 # in seconds
+    retry-count: 3
+    time-to-live: 60 # in seconds:
